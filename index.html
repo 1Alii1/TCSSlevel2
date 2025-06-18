@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen bg-gray-100">
+  <!-- Sidebar -->
+  <aside class="w-16 md:w-20 bg-gray-900 text-white flex flex-col items-center py-4 space-y-6">
+    <div class="text-2xl font-bold">📱</div>
+    <div class="space-y-4">
+      <div class="text-xl">🏠</div>
+      <div class="text-xl">📊</div>
+      <div class="text-xl">👥</div>
+      <div class="text-xl">⚙️</div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+    <!-- Top Navbar -->
+    <nav class="flex justify-between items-center p-4 bg-white shadow">
+      <input type="text" placeholder="Search..." class="px-4 py-2 border rounded w-1/3">
+      <div class="flex items-center space-x-4">
+        <div>🔔</div>
+        <div>⚙️</div>
+        <div class="flex items-center space-x-2">
+          <img src="https://via.placeholder.com/30" class="rounded-full" alt="Profile">
+          <span class="font-medium">Alex</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <header class="p-6 bg-gray-50 border-b">
+      <h1 class="text-2xl font-bold">Dashboard</h1>
+      <p class="text-gray-500">Mobile UX/UI Design course</p>
+<div class="mt-4 space-x-2">
+  <button class="bg-green-500 text-white px-4 py-2 rounded hover:text-yellow-300 hover:bg-blue-700 transition-colors">
+    Manage Dashboard
+  </button>
+  <button class="bg-green-500 text-white px-4 py-2 rounded hover:text-black hover:bg-blue-700 transition-colors">
+    Create New Dashboard
+  </button>
+</div>
+    </header>
+
+    <!-- Statistics Cards -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
+      <div class="bg-white shadow rounded p-4">Students: <strong>240</strong></div>
+      <div class="bg-white shadow rounded p-4">Avg. Mark: <strong>82%</strong></div>
+      <div class="bg-white shadow rounded p-4">Underperforming: <strong>18</strong></div>
+      <div class="bg-white shadow rounded p-4">Finished: <strong>150</strong></div>
+    </section>
+
+    <!-- Chart Placeholders -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-6">
+      <div class="bg-white shadow rounded p-6 h-64 flex items-center justify-center text-gray-400">Chart Placeholder 1</div>
+      <div class="bg-white shadow rounded p-6 h-64 flex items-center justify-center text-gray-400">Chart Placeholder 2</div>
+    </section>
+
+    <!-- Students List -->
+    <section class="p-6">
+      <h2 class="text-xl font-semibold mb-4">Top Students</h2>
+      <div class="bg-white shadow rounded divide-y">
+        <div class="flex justify-between p-4 items-center">
+          <div class="flex items-center space-x-4">
+            <img src="images__5_-removebg-preview.png" class="rounded-full" width="100" alt="Student">
+            <span>Andrew</span>
+          </div>
+          <span class="font-bold">70%</span>
+        </div>
+        <div class="flex justify-between p-4 items-center">
+          <div class="flex items-center space-x-4">
+            <img src="images__6_-removebg-preview.png" class="rounded-full" width="100"alt="Student">
+            <span>Olivia</span>
+          </div>
+          <span class="font-bold">78%</span>
+        </div>
+        <!-- Add more students similarly -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm p-4">
+      Recreated on Codepen with Tailwind CSS
+    </footer>
+  </div>
+</body>
+</html>
